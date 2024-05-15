@@ -2,9 +2,7 @@
 import { RouterLink, RouterView } from 'vue-router'
 
 
-const redirectToHome = () => {
-  router.push({ path: '/' });
-};
+
 
 </script>
 <template>
@@ -13,7 +11,8 @@ const redirectToHome = () => {
       <div class="container mx-auto">
         <nav class="flex items-center justify-center p-7">
           <div class="text-teal-500">
-            <RouterLink class="hover:text-teal-300 text-sm p-2.5 font-semibold border rounded-lg focus:ring-3 border-none focus:ring-teal-700" to="/">Randy Ivando</RouterLink> |
+            <RouterLink class="hover:text-teal-300 text-sm p-2.5 font-semibold border rounded-lg focus:ring-3 border-none focus:ring-teal-700" to="/">todos</RouterLink>
+            <RouterLink class="hover:text-teal-300 text-sm p-2.5 font-semibold border rounded-lg focus:ring-3 border-none focus:ring-teal-700" to="/about">Post</RouterLink> | |
      
           </div>
         </nav>
@@ -42,16 +41,8 @@ nav a {
   color: black;
 }
 
-nav a.router-link-exact-active {
-  @apply text-white;
-  @apply bg-gray-700;
-  
-}
-.navbar-fixed {
-    @apply fixed z-[9999] bg-white bg-opacity-80;
-    backdrop-filter: blur(5px);
-    box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.1);
-}
+
+
 </style>
 
 <script>

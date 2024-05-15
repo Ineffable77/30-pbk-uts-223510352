@@ -10,7 +10,7 @@ const hideNotCompleted = ref(true)
 
 const storedTodos = JSON.parse(localStorage.getItem('todos'))
 const todos = ref(storedTodos || [
-  { id: id++, text: 'Memasak', done: true },
+  { id: id++, text: 'Nobar', done: true },
   
 ])
 
