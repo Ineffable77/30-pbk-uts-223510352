@@ -2,8 +2,6 @@
 import { RouterLink, RouterView } from 'vue-router'
 
 
-
-
 </script>
 <template>
   <div id="app">
@@ -12,7 +10,7 @@ import { RouterLink, RouterView } from 'vue-router'
         <nav class="flex items-center justify-center p-7">
           <div class="text-teal-500">
             <RouterLink class="hover:text-teal-300 text-sm p-2.5 font-semibold border rounded-lg focus:ring-3 border-none focus:ring-teal-700" to="/">todos</RouterLink>
-            <RouterLink class="hover:text-teal-300 text-sm p-2.5 font-semibold border rounded-lg focus:ring-3 border-none focus:ring-teal-700" to="/about">Post</RouterLink> | |
+            <RouterLink class="hover:text-teal-300 text-sm p-2.5 font-semibold border rounded-lg focus:ring-3 border-none focus:ring-teal-700" to="/post">Post</RouterLink> | |
      
           </div>
         </nav>
