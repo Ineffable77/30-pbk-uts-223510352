@@ -1,24 +1,10 @@
 <script setup>
-import { ref, watchEffect } from "vue";
+import { ref, inject, watchEffect } from 'vue';
 
-const users = ref([]);
-const posts = ref([]);
-
-const selectedUser = ref(null);
-
-const getUsers = async () => {
-  const url = "https://jsonplaceholder.typicode.com/users";
-  const response = await fetch(url);
-  users.value = await response.json();
-};
-
-const getPosts = async (userId) => {
-  const url = `https://jsonplaceholder.typicode.com/posts?userId=${userId}`;
-  const response = await fetch(url);
-  posts.value = await response.json();
-};
-
-getUsers();
+const users = inject('users');
+const posts = inject('posts');
+const selectedUser = inject('selectedUser');
+const getPosts = inject('getPosts');
 
 watchEffect(() => {
   if (selectedUser.value) {
@@ -28,11 +14,10 @@ watchEffect(() => {
 </script>
 
 <style>
-
-body{
+body {
   background-color: #f5f5f5;
 }
-.dalam{
+.dalam {
   text-align: left;
   display: flex;
   flex-direction: column;
@@ -40,21 +25,19 @@ body{
   justify-content: center;
 }
 
+select {
+  margin-bottom: 20px;
+}
 
-  select {
-    margin-bottom: 20px;
-  }
+ul {
+  padding: 0;
+}
 
-  ul {
-  
-    padding: 0;
-  }
-
-  li {
-    margin-bottom: 10px;
-    padding-left: 7rem;
-    padding-right: 7rem;
-  }
+li {
+  margin-bottom: 10px;
+  padding-left: 7rem;
+  padding-right: 7rem;
+}
 </style>
 
 <template>
