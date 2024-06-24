@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import todos from '../views/todos.vue'
 import post from '../views/post.vue'
+import Albums from "../views/Albums.vue"
 
 
 const routes = [
@@ -13,6 +14,16 @@ const routes = [
     path: '/post',
     name: 'post',
     component: post
+  },
+  {
+    path: '/album',
+    name: 'album',
+    component: Albums
+  } ,
+  {
+    path: '/albums/:id',
+    name: 'AlbumDetailComponent',
+    component: Albums
   }
 ]
 

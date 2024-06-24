@@ -39,8 +39,10 @@ provide('getPosts', getPosts);
       <div class="container mx-auto">
         <nav class="flex items-center justify-center p-7">
           <div class="text-teal-500">
-            <RouterLink class="hover:text-teal-300 text-sm p-2.5 font-semibold border rounded-lg focus:ring-3 border-none focus:ring-teal-700" to="/">todos</RouterLink>
-            <RouterLink class="hover:text-teal-300 text-sm p-2.5 font-semibold border rounded-lg focus:ring-3 border-none focus:ring-teal-700" to="/post">Post</RouterLink> | |
+            <RouterLink class="hover:text-teal-300 text-sm p-2.5 font-semibold border rounded-lg focus:ring-3 border-none focus:ring-teal-700" to="/">todos</RouterLink> |
+            <RouterLink class="hover:text-teal-300 text-sm p-2.5 font-semibold border rounded-lg focus:ring-3 border-none focus:ring-teal-700" to="/post">Post</RouterLink> | 
+            <RouterLink class="hover:text-teal-300 text-sm p-2.5 font-semibold border rounded-lg focus:ring-3 border-none focus:ring-teal-700" to="/album">Album</RouterLink> | 
+            
           </div>
         </nav>
       </div>
@@ -51,6 +53,11 @@ provide('getPosts', getPosts);
       </div>
     </div>
   </div>
+
+  <footer class="footerr">
+    <div class="">© 2024 RandyIvando.com All Rights Reserved.</div>
+    <div class="">JL. Kubang Raya | email@gmail.com | telpon 08********</div>
+  </footer>
 </template>
 
 <style>
@@ -65,6 +72,18 @@ nav {
 
 nav a {
   color: black;
+}
+
+.footerr {
+  background-color: #dcdcdc;
+  color: #1a1a1a;
+  text-align: center;
+  padding-bottom: 5px;
+  padding-top: 3px;
+  bottom: 0;
+  width: 100%;
+  font-weight: 400;
+  position:fixed ;
 }
 </style>
 
