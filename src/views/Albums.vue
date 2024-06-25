@@ -92,7 +92,7 @@ body {
   padding: 1rem 5rem 2rem 5rem;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
   border-radius: 20px;
-  background-color: #525252;
+  background-color: #a7a7a7;
   position: relative;
   overflow: hidden;
 }
@@ -104,19 +104,19 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #333;
+
   backdrop-filter: blur(8px);
   z-index: -1;
 }
 
 .album-details-container:hover {
   transform: scale(1.01);
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 12px 30px rgba(73, 73, 73, 0.2);
   transition: transform 0.3s ease-in-out;
 }
 
 .title {
-  color: #e4e4e4;
+  color: #1b1b1b;
   text-align: center;
   font-weight: bold;
   font-size: 2.5rem;
@@ -132,7 +132,7 @@ body {
   border-radius: 10px;
   background-color: #f9f9f9;
   font-size: 1rem;
-  color: #333;
+  color: #363333;
   transition: border-color 0.3s;
 }
 
@@ -173,7 +173,7 @@ body {
   margin-top: 10px;
   font-size: 0.9rem;
   text-align: center;
-  color: #ffffff;
+  color: #3f3f3f;
 }
 
 .no-photos {
